@@ -38,8 +38,9 @@ function App() {
             </Card>
           </div>
         </main>
-
-
+        <footer className="footer">
+          Coded by, Copyright &copy;  2021 <span className="portfolio-link"><a href="https://ryanroat.net/">rsr70</a></span>
+        </footer>
       </Container>
     </div>
   );
