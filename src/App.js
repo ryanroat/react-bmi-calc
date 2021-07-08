@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <Container className="container" maxWidth="md">
+      <Container className="container" maxWidth="xs">
         <header>
           <h1>Body Mass Index calculator</h1>
         </header>
