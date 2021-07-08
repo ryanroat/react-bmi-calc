@@ -1,8 +1,12 @@
 import './App.css';
+import { useState } from 'react';
 
-import { Card, CardContent, Container, InputAdornment, TextField } from '@material-ui/core'
+import { Card, CardContent, Container, TextField } from '@material-ui/core'
 
 function App() {
+  const [height, setHeight] = useState(70)
+  const [weight, setWeight] = useState(170)
+
   return (
     <div className="App">
       <Container className="container" maxWidth="md">
@@ -15,17 +19,21 @@ function App() {
               type = "number"
               variant = "outlined"
               label = 'your height in inches'
-              endAdornment = {<InputAdornment position="end">In</InputAdornment>} />
+              value = {height}
+              onChange={(e) => setHeight(e.target.value)}
+            />
             <TextField className="weight"
               type = "number"
               variant = "outlined"
               label = 'your weight in pounds'
-              endAdornment = {<InputAdornment position="end">Lbs</InputAdornment>} />
+              value = {weight}
+              onChange={(e) => setWeight(e.target.value)}
+            />
           </div>
           <div className="output">
             <Card>
               <CardContent>
-                Your BMI is 
+                Your BMI is { (weight / (height**2) * 703).toFixed(2) }
               </CardContent>
             </Card>
           </div>
