@@ -2,6 +2,9 @@ import './App.css';
 import { useState } from 'react';
 
 import { Card, CardContent, Container, TextField } from '@material-ui/core'
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+
 
 function App() {
   const [height, setHeight] = useState(70)
@@ -10,9 +13,7 @@ function App() {
   return (
     <div className="App">
       <Container className="container" maxWidth="xs">
-        <header>
-          <h1>Body Mass Index calculator</h1>
-        </header>
+        <Header />
         <main>
           <div className="inputs">
             <TextField className="height"
@@ -38,9 +39,7 @@ function App() {
             </Card>
           </div>
         </main>
-        <footer className="footer">
-          Copyright &copy;  2021 Coded by <span className="portfolio-link"><a href="https://ryanroat.net/">rsr70</a></span>
-        </footer>
+        <Footer />
       </Container>
     </div>
   );
