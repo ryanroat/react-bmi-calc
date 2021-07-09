@@ -18,7 +18,8 @@ code {
 }
 
 .height,
-.weight {
+.weight,
+.targetBMI {
   background-color: #EEE;
 }
 
