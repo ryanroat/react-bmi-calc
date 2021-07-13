@@ -1,5 +1,7 @@
 # Body Mass Index calculator built with React and Material UI
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dcdd711b-2479-458b-a19e-d064bd2f360f/deploy-status)](https://app.netlify.com/sites/rsrbmi/deploys)
+
 ## future feature additions
 
 * add metric inputs and calculation
